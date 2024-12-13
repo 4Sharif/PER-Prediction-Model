@@ -9,10 +9,15 @@ import joblib
 from split import X_train, X_test, y_train, y_test
 from modelTraining import model
 
-models = { "Linear Regression": model, "Random Forest": RandomForestRegressor(random_state=42), "Gradient Boosting": GradientBoostingRegressor(random_state=42), "Support Vector Regressor": SVR(kernel="rbf") }
+# Define models
+models = { "Linear Regression": model, 
+          "Random Forest": RandomForestRegressor(random_state=42), 
+          "Gradient Boosting": GradientBoostingRegressor(random_state=42), 
+          "Support Vector Regressor": SVR(kernel="rbf") }
 
 results = {}
 
+# Evaluate each model
 for name, regressor in models.items():
     if name != "Linear Regression":
         regressor.fit(X_train, y_train)
