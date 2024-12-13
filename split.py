@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import joblib
 
-# Copy the file path for transformed dataset "MinMax" and insert it here
+# Copy the file path for transformed dataset and insert it here
 data = pd.read_csv('/Users/mohamed/Documents/CompSci/Data Mining/Project2/MinMax.csv')
 
 X = data[['Total_Minutes', 'FG', 'FGA', 'FT', 'FTA', 'TRB', 'AST', 'PTS', 'PTOV', 'SFD', 'PGA', 'AND1', 'TS%', 'USG%', 'WS', 'BPM', 'VORP', 'ORtg']]
