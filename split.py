@@ -1,7 +1,6 @@
 # Splits the dataset into training and testing subsets for
 # model evaluation. The split ensures 80% of the data is used
 # for training, and 20% is reserved for testing.
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import joblib
