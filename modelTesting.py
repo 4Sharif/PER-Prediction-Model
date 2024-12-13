@@ -3,9 +3,14 @@
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import joblib
 
+# Loading the split and trained model
 X_train, X_test, y_train, y_test = joblib.load('train_test_split.pkl')
 model = joblib.load('trained_model.pkl')
+
+# Predicting PER on test data
 y_pred = model.predict(X_test)
+
+# Calculating evaluation metrics
 mae = mean_absolute_error(y_test, y_pred)
 mse = mean_squared_error(y_test, y_pred)
 rmse = mse ** 0.5
