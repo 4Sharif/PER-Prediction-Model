@@ -13,7 +13,7 @@ X = data[['Total_Minutes', 'FG', 'FGA', 'FT', 'FTA', 'TRB', 'AST', 'PTS', 'PTOV'
 y = data['PER']
 
 # 80% training 20% testing
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) # Random
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)  
 joblib.dump((X_train, X_test, y_train, y_test), 'train_test_split.pkl')
 
 print("Training set size:", X_train.shape)
