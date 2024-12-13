@@ -1,9 +1,8 @@
 # PER Predictions
-
 import joblib
 import numpy as np
 
-# Load the trained model
+# Loading the trained model
 model = joblib.load('trained_model.pkl')
 
 feature_names = ['Total_Minutes', 'FG', 'FGA', 'FT', 'FTA', 'TRB', 'AST', 'PTS', 'PTOV', 'SFD', 'PGA', 'AND1', 'TS%', 'USG%', 'WS', 'BPM', 'VORP', 'ORtg']
@@ -210,7 +209,7 @@ print(f"\n2024 Kawhi Leonard\nReal PER: 23.2\nPredicted PER: {predicted_per28:.1
 display_with_difference(23.2, predicted_per28)
 
 
-# Function to calculate the average of differences
+# Function to calculate the average of the differences
 def calculate_average_difference(real_per_list, predicted_per_list):
     differences = [abs(real - predicted) for real, predicted in zip(real_per_list, predicted_per_list)]
     average_difference = sum(differences) / len(differences)
