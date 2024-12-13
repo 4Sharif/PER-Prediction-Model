@@ -10,5 +10,5 @@ The coding files are meant to be viewed/used in this order:
 6. modelComparison
 7. predictiveTool
 
-For everything to work, download the transformed dataset, copy 
-the file path, and insert it in "split.py"
+For everything to work, download the transformed csv dataset, copy 
+the file path, and insert it in "split.py." 
