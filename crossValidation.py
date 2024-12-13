@@ -1,6 +1,5 @@
 # Performs cross-validation to validate the consistency and
 # reliability of the model using training data.
-
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
 import joblib
