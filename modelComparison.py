@@ -9,7 +9,7 @@ import joblib
 from split import X_train, X_test, y_train, y_test
 from modelTraining import model
 
-# Define models
+# Defining the models
 models = { "Linear Regression": model, 
           "Random Forest": RandomForestRegressor(random_state=42), 
           "Gradient Boosting": GradientBoostingRegressor(random_state=42), 
@@ -17,7 +17,7 @@ models = { "Linear Regression": model,
 
 results = {}
 
-# Evaluate each model
+# Evaluates each model
 for name, regressor in models.items():
     if name != "Linear Regression":
         regressor.fit(X_train, y_train)
@@ -25,7 +25,7 @@ for name, regressor in models.items():
 
     y_pred = regressor.predict(X_test)
 
-    # Calculate metrics
+    # Calculates metrics
     mae = mean_absolute_error(y_test, y_pred)
     rmse = root_mean_squared_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
