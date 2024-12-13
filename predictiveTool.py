@@ -1,6 +1,9 @@
+# PER Predictions
+
 import joblib
 import numpy as np
 
+# Load the trained model
 model = joblib.load('trained_model.pkl')
 
 feature_names = ['Total_Minutes', 'FG', 'FGA', 'FT', 'FTA', 'TRB', 'AST', 'PTS', 'PTOV', 'SFD', 'PGA', 'AND1', 'TS%', 'USG%', 'WS', 'BPM', 'VORP', 'ORtg']
@@ -8,8 +11,8 @@ feature_min = [200, 0.3, 0.8, 0, 0, 0.4, 0, 1, 0, 0, 2, 0, 0.312, 10, -2.1, -9, 
 feature_max = [3125, 11.5, 23.6, 9.8, 12.3, 16, 11.7, 33.9, 243, 385, 1947, 105, 0.7, 38.8, 16.4, 10, 8.2, 147]
 
 # Define the PER min-max range
-per_min = 0  # Adjust if PER has a specific minimum
-per_max = 30  # Adjust if PER has a specific maximum
+per_min = 0   
+per_max = 30   
 
 
 # Function to normalize features
