@@ -16,7 +16,8 @@ feature_importance = pd.DataFrame({
     'Absolute Importance': absolute_importance
 })
 
-feature_importance = feature_importance.sort_values(by='Absolute Importance', ascending=False) # Sort by absolute importance
+# Sorting by absolute importance
+feature_importance = feature_importance.sort_values(by='Absolute Importance', ascending=False)  
 
 print("Feature Importance for Linear Regression:")
 print(feature_importance)
