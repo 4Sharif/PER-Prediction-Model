@@ -1,6 +1,5 @@
 # Trains a Linear Regression model on the training data and
 # saves the trained model for evaluation.
-
 from sklearn.linear_model import LinearRegression
 import joblib
 
