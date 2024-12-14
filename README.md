@@ -16,5 +16,7 @@ predictive tool has the ability to take inputs from the user.
 As an example, I included 28 players in total, ranging from 
 1997-2024. It will output their predicted PER based on their statistics.
 
-For everything to work, download the transformed csv dataset, copy 
-its file path from your device, and insert it into "split.py." 
+Download the transformed csv dataset, copy its file path from 
+your device, and insert it into "split.py." For the predictive tool 
+to work, run "split.py" and then run "modelTraining.py." This is because 
+of the joblib import.
