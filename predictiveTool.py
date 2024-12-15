@@ -45,7 +45,7 @@ def display_with_difference(real_per, predicted_per):
 example_input3 = [2852, 9.3, 18.3, 4.5, 5.7, 9.2, 3, 23.2, 113, 186, 590, 48, 0.558, 30.4, 9.1, 3.5, 3.9, 105] # Input a player's statistics
 predicted_per3 = predict_per(example_input3) # Gives PER prediction based on player's statistics
 print(f"\n1997 Hakeem Olajuwon\nReal PER: 22.7\nPredicted PER: {predicted_per3:.1f}") # Output predicted PER
-display_with_difference(22.7, predicted_per3) # Computes difference between real and predicted PER to demonstrate the model's accuracy
+display_with_difference(22.7, predicted_per3) # Computes absolute difference between real and predicted PER to demonstrate the model's accuracy
 
 # 98 Jordan 25.2
 example_input1 = [3181, 10.7, 23.1, 6.9, 8.8, 5.8, 3.5, 28.7, 89, 278, 607, 70, 0.533, 33.7, 15.8, 6.9, 7.1, 114]
