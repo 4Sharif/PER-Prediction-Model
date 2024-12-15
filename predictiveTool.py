@@ -1,4 +1,3 @@
-# PER Predictions
 import joblib
 import numpy as np
 
@@ -40,6 +39,7 @@ def display_with_difference(real_per, predicted_per):
     difference = round(abs(real_per - predicted_per), 1)
     print(f"Difference: {difference}")
 
+#---------------------------------------------INSERT-PLAYERS-FOR-PREDICTIONS-HERE---------------------------------------------#
 
 # 97 Olajuwon 22.7
 example_input3 = [2852, 9.3, 18.3, 4.5, 5.7, 9.2, 3, 23.2, 113, 186, 590, 48, 0.558, 30.4, 9.1, 3.5, 3.9, 105] # Input a player's statistics
@@ -209,6 +209,7 @@ predicted_per28 = predict_per(example_input28)
 print(f"\n2024 Kawhi Leonard\nReal PER: 23.2\nPredicted PER: {predicted_per28:.1f}")
 display_with_difference(23.2, predicted_per28)
 
+#--------------------------------------------------------------------------------------------------------------#
 
 # Function to calculate the average of the differences
 def calculate_average_difference(real_per_list, predicted_per_list):
@@ -216,6 +217,7 @@ def calculate_average_difference(real_per_list, predicted_per_list):
     average_difference = sum(differences) / len(differences)
     return round(average_difference, 2)
 
+# Manually putting the real and predicted PER in these list
 real_per_list = [22.7, 25.2, 22.2, 19.4, 30.2, 22.9, 30.3, 21.8, 27.0, 28.1, 24.1, 28.3, 25.4, 14.8, 18.6, 22.7, 16.8, 29.8, 20.0, 21.5, 30.6, 28.6, 30.6, 27.6, 23.0, 32.8, 12.0, 23.2]
 predicted_per_list = [22.9, 26.2, 21.9, 16.5, 29.7, 20.4, 27.3, 17.8, 26.8, 27.5, 23.6, 25.3, 24.3, 10.2, 14.3, 21.6, 14.7, 29.1, 17.8, 18.7, 32.2, 27.3, 28.3, 27.8, 22.4, 35.8, 9.3, 21.8]
 
