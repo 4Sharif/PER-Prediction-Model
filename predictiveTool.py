@@ -34,7 +34,7 @@ def predict_per(raw_features):
     real_per = denormalize_per(normalized_per) # Convert normalized PER back to real-world PER
     return real_per
 
-# Function to calculate and display differences
+# Function to calculate and display the absolute differences
 def display_with_difference(real_per, predicted_per):
     difference = round(abs(real_per - predicted_per), 1)
     print(f"Difference: {difference}")
