@@ -4,9 +4,8 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import joblib
-
-# Copy the whole file path for transformed.csv dataset and insert it in between here  
-data = pd.read_csv('/Users/mohamed/Documents/CompSci/Data Mining/PER/PER-main/Transformed.csv')
+ 
+data = pd.read_csv('') # Copy the whole file path for transformed.csv dataset and insert it in between here 
 
 X = data[['Total_Minutes', 'FG', 'FGA', 'FT', 'FTA', 'TRB', 'AST', 'PTS', 'PTOV', 'SFD', 'PGA', 'AND1', 'TS%', 'USG%', 'WS', 'BPM', 'VORP', 'ORtg']]
 y = data['PER']
